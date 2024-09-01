@@ -7,4 +7,4 @@ echo "seconf number is $2"
 
 sum=$(($number1+$number2))
 
-echo total is $sum;
+echo "total is $sum";
