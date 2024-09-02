@@ -33,7 +33,7 @@ validation $? "git package"
 echo "package installation is success"
 else
 echo "package already there";
-fi
+
 
 
 
