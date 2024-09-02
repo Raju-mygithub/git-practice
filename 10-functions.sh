@@ -1,3 +1,3 @@
 #!/bin/bash
-userid=$[ id -u ];
+userid=$(id -u)
 echo "executed user id is $userid";
