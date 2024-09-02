@@ -1,6 +1,13 @@
 #!/bin/bash
 userid=$(id -u)
 echo "executed user id is $userid";
+if [ $userid -ne 0 ]
+then 
+echo "user doesnot have root permissions"
+exit 1;
+else
+echo "user have root permssion";
+fi
 validation[]
 {
 
