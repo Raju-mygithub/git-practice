@@ -3,7 +3,7 @@
 LOGS_FOLDER="/var/log/shell-scripts"
 SCRIPT_NAME=$($0 | cut -d '.' -f1)
 TIME_STAMP=$date
-LOG_FILE=$($LOGS_FOLDER/$SCRIPT_NAME-$TIME_STAMP.log)
+#LOG_FILE=$($LOGS_FOLDER/$SCRIPT_NAME-$TIME_STAMP.log)
 mkdir -p "/var/log/shell-scripts"
 
 userid=$(id -u)
