@@ -14,8 +14,9 @@ CHECK_ROOT(){
     then
     echo "user doesnot have root permissions, please login with root"
     exit 1
-    else "user have root permssions"
-    
+    else 
+    echo "user have root permssions"
+
     fi
 }
 
