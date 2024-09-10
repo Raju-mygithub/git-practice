@@ -30,12 +30,13 @@ VALIDATE(){
 }
 
 CHECK_ROOT()
+
 CHECK_USAGE(){
 
     echo "usage of script like scriptname and give arguments"
 }
 
-if ($# -eq 0)
+if ( $# -eq 0 )
 then
 CHECK_USAGE
 exit 1
