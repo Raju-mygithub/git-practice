@@ -37,7 +37,7 @@ CHECK_USAGE(){
 
 if ($# -eq 0)
 then
-CHECK_USAGE()
+CHECK_USAGE
 exit 1
 fi
 
