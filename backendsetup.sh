@@ -48,7 +48,7 @@ cp /home/ec2-user/git-practice/backend.service /etc/systemd/system/backend.servi
 VALIDATE $? "copyingbackendserviceconf"
 dnf install mysql -y
 VALIDATE $? "installing mysql"
-mysql -h backendapp.mydevops22.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
+mysql -hbackendapp.mydevops22.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
 VALIDATE $? "validating schema"
 systemctl daemon-reload
 VALIDATE $? "reloading daemon"
