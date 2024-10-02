@@ -1,7 +1,9 @@
 #!/bin/bash
+
 USERID=$(id -u)
+
 CHECK_ROOT(){
-    if [$USERID -ne 0 ] 
+    if [ $USERID -ne 0 ] 
         then
         echo "please run this script using root permissions"
         exit 1
@@ -18,7 +20,7 @@ VALIDATE(){
     echo "$2 is success"
     fi
 }
-
+CHECK_ROOT
 dnf install mysql-server -y
 VALIDATE $? "Installing mysql"
 systemctl enable mysqld
