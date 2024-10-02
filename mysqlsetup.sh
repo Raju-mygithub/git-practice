@@ -5,7 +5,8 @@ CHECK_ROOT(){
         then
         echo "please run this script using root permissions"
         exit 1
-        else "You have root permissions"
+        else 
+        echo "You have root permissions"
         fi
 }
 
